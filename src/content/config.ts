@@ -32,7 +32,11 @@ const teamCollection = defineCollection({
 });
 
 const buttonStyleSchema = z.enum(["primary", "outline", "inverted", "muted"]);
-const sponsorTypeSchema = z.enum(["sponsors_donors", "veterinary_partners"]);
+const sponsorTypeSchema = z.enum([
+  "sponsors_donors",
+  "rescue_and_shelter_partners",
+  "veterinary_partners",
+]);
 const infoCardToneSchema = z.enum(["sand", "sky", "sage", "ink"]);
 
 const sponsorsCollection = defineCollection({

@@ -1,9 +1,14 @@
 import { getCollection } from "astro:content";
 
-export const sponsorTypeOrder = ["sponsors_donors", "veterinary_partners"] as const;
+export const sponsorTypeOrder = [
+  "sponsors_donors",
+  "rescue_and_shelter_partners",
+  "veterinary_partners",
+] as const;
 
 export const sponsorTypeLabels = {
   sponsors_donors: "Sponsors & Donors",
+  rescue_and_shelter_partners: "Rescue And Shelter Partners",
   veterinary_partners: "Veterinary Partners",
 } as const;
 
