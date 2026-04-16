@@ -197,7 +197,7 @@ content:
         type: select
         required: true
         options:
-          values: [sponsors_donors, veterinary_partners]
+          values: [sponsors_donors, rescue_and_shelter_partners, veterinary_partners]
       - name: sortOrder
         label: Sort Order
         type: number
@@ -722,7 +722,7 @@ content:
                 list: true
                 help: "Optional. Leave empty to show all sponsor types."
                 options:
-                  values: [sponsors_donors, veterinary_partners]
+                  values: [sponsors_donors, rescue_and_shelter_partners, veterinary_partners]
           - name: team_members
             label: Team Members
             fields:
