@@ -1,20 +1,17 @@
 {
   "name": "Clarion Cat Initiative Group",
-  "displayName": "Clarion Cat Initiative Group",
-  "organizationName": "Clarion Cat Initiative Group",
   "description": "Volunteer-led Trap-Neuter-Return support, education, and community resources for outdoor cats in Clarion County, Pennsylvania.",
   "titleSeparator": " | ",
+  "catsFixedCount": 15,
   "footerContactCta": {
     "eyebrow": "Have A Question?",
     "headline": "Contact us",
     "body": "We are always happy to connect with neighbors, donors, and community partners working to support humane solutions for cats in Clarion County.",
     "email": "clarioncatinitiative@gmail.com",
-    "buttonLabel": "Contact us",
-    "buttonHref": ""
+    "buttonLabel": "Contact us"
   },
   "navDonate": {
     "label": "Donate",
     "href": "https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-11001"
-  },
-  "catsFixedCount": 0
+  }
 }
