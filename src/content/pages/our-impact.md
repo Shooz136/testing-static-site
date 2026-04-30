@@ -96,5 +96,9 @@ sections:
           alt: "trap happy raccoon "
   - type: counter
     label: Kritties Fixed
-    heading: FUCKIN CHOP THEM BALLS
+    heading: CHOP THEM BALLS!
+    body: |+
+      - Trap Cats
+      - Remove Balls
+      - Profit.
 ---
