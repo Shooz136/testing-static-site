@@ -94,4 +94,7 @@ sections:
       - image:
           src: /uploads/1000065716.jpeg
           alt: "trap happy raccoon "
+  - type: counter
+    label: Kritties Fixed
+    heading: FUCKIN CHOP THEM BALLS
 ---
