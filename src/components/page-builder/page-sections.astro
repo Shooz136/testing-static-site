@@ -1,6 +1,7 @@
 ---
 import SectionCta from "@/components/page-builder/section-cta.astro";
 import SectionContact from "@/components/page-builder/section-contact.astro";
+import SectionCounter from "@/components/page-builder/section-counter.astro";
 import SectionEmbed from "@/components/page-builder/section-embed.astro";
 import SectionFeatureGrid from "@/components/page-builder/section-feature-grid.astro";
 import SectionFullWidthBanner from "@/components/page-builder/section-full-width-banner.astro";
@@ -29,6 +30,10 @@ const { sections = [] } = Astro.props;
 
     if (section.type === "text") {
       return <SectionText {...section} />;
+    }
+
+    if (section.type === "counter") {
+      return <SectionCounter {...section} />;
     }
 
     if (section.type === "image_text") {

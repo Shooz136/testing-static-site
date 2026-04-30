@@ -25,6 +25,11 @@ content:
         label: Title Separator
         type: string
         required: true
+      - name: catsFixedCount
+        label: Cats Fixed Count
+        type: number
+        required: true
+        help: "Shared number shown by every Counter section across the site."
       - name: footerContactCta
         label: Footer Contact CTA
         type: object
@@ -401,6 +406,23 @@ content:
                 type: select
                 options:
                   values: [left, center]
+          - name: counter
+            label: Counter
+            fields:
+              - name: label
+                label: Count Label
+                type: string
+                required: true
+                help: "Short label shown under the number, e.g. Cats fixed."
+              - name: heading
+                label: Heading
+                type: string
+                required: true
+              - name: body
+                label: Text
+                type: rich-text
+                options:
+                  path: pages
           - name: image_text
             label: Image + Text
             fields:

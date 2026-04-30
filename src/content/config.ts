@@ -100,6 +100,12 @@ const pagesCollection = defineCollection({
           align: z.enum(["left", "center"]).default("left"),
         }),
         z.object({
+          type: z.literal("counter"),
+          label: z.string().default("Cats fixed"),
+          heading: z.string(),
+          body: z.string().default(""),
+        }),
+        z.object({
           type: z.literal("image_text"),
           title: z.string(),
           body: z.string().default(""),

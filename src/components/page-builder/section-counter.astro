@@ -1,0 +1,35 @@
+---
+import RichText from "@/components/page-builder/rich-text.astro";
+import { siteConfig } from "@/config/site";
+
+const { label = "Cats fixed", heading, body = "" } = Astro.props;
+const formattedCount = new Intl.NumberFormat("en-US").format(
+  siteConfig.catsFixedCount ?? 0
+);
+---
+
+<section class="py-12">
+  <div class="mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-border bg-card shadow-[0_26px_70px_-52px_rgba(15,23,42,0.45)]">
+    <div class="grid items-stretch gap-0 md:grid-cols-[minmax(12rem,0.85fr)_1.4fr]">
+      <div class="flex flex-col items-center justify-center bg-primary px-8 py-12 text-center text-primary-foreground md:py-16">
+        <div class="text-6xl font-extrabold leading-none tracking-tight sm:text-7xl lg:text-8xl">
+          {formattedCount}
+        </div>
+        {
+          label && (
+            <p class="mt-4 text-sm font-semibold uppercase tracking-[0.24em] text-primary-foreground/82">
+              {label}
+            </p>
+          )
+        }
+      </div>
+
+      <div class="px-8 py-10 md:px-12 md:py-14">
+        <h2 class="text-3xl font-bold tracking-tight text-foreground lg:text-5xl">
+          {heading}
+        </h2>
+        {body && <RichText content={body} class="mt-5 text-muted-foreground" />}
+      </div>
+    </div>
+  </div>
+</section>
