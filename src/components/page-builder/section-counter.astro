@@ -9,18 +9,20 @@ const formattedCount = new Intl.NumberFormat("en-US").format(
 ---
 
 <section class="py-12">
-  <div class="mx-auto max-w-6xl rounded-[2rem] border border-border bg-background p-6 shadow-[0_26px_70px_-54px_rgba(12,40,99,0.45)] sm:p-8 lg:p-10">
-    <div class="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
+  <div class="mx-auto max-w-6xl rounded-[2rem] border-2 border-[color-mix(in_srgb,var(--foreground)_18%,white)] bg-[linear-gradient(135deg,color-mix(in_srgb,var(--primary)_10%,white),white_42%,color-mix(in_srgb,var(--foreground)_7%,white))] p-6 shadow-[0_30px_80px_-56px_rgba(12,40,99,0.58)] sm:p-8 lg:p-10">
+    <div class="grid items-center gap-10 rounded-[1.5rem] border border-white/80 bg-white/72 px-6 py-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] lg:grid-cols-[0.82fr_1.18fr] lg:gap-14 lg:px-10 lg:py-12">
       <div class="flex flex-col items-center justify-center text-center">
-        <div class="relative flex h-44 w-44 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-[0_22px_48px_-30px_rgba(12,40,99,0.65)] ring-8 ring-secondary sm:h-52 sm:w-52 lg:h-56 lg:w-56">
-          <div class="absolute inset-3 rounded-full border border-primary-foreground/25"></div>
-          <span class="relative text-6xl font-extrabold leading-none tracking-tight sm:text-7xl lg:text-8xl">
-            {formattedCount}
-          </span>
+        <div class="rounded-full bg-[color-mix(in_srgb,var(--foreground)_9%,white)] p-3 shadow-[0_22px_55px_-34px_rgba(12,40,99,0.72)]">
+          <div class="relative flex h-44 w-44 items-center justify-center rounded-full bg-primary text-primary-foreground ring-4 ring-white sm:h-52 sm:w-52 lg:h-56 lg:w-56">
+            <div class="absolute inset-3 rounded-full border-2 border-primary-foreground/28"></div>
+            <span class="relative text-6xl font-extrabold leading-none tracking-tight drop-shadow-sm sm:text-7xl lg:text-8xl">
+              {formattedCount}
+            </span>
+          </div>
         </div>
         {
           label && (
-            <p class="mt-6 text-sm font-bold uppercase tracking-[0.28em] text-foreground sm:text-base">
+            <p class="mt-6 rounded-full bg-[color-mix(in_srgb,var(--foreground)_8%,white)] px-5 py-2 text-sm font-bold uppercase tracking-[0.28em] text-foreground sm:text-base">
               {label}
             </p>
           )
@@ -28,14 +30,15 @@ const formattedCount = new Intl.NumberFormat("en-US").format(
       </div>
 
       <div class="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
-        <h2 class="text-4xl font-bold tracking-tight text-foreground lg:text-5xl">
+        <div class="mb-5 h-1.5 w-24 rounded-full bg-primary max-lg:mx-auto"></div>
+        <h2 class="text-4xl font-extrabold tracking-tight text-foreground lg:text-6xl">
           {heading}
         </h2>
         {
           body && (
             <RichText
               content={body}
-              class="mt-6 text-xl leading-relaxed text-muted-foreground prose-ul:mx-auto prose-ul:inline-block prose-ul:text-left prose-li:pl-2 prose-li:marker:text-primary lg:prose-ul:mx-0"
+              class="mt-6 text-xl font-medium leading-relaxed text-muted-foreground prose-ul:mx-auto prose-ul:inline-block prose-ul:text-left prose-li:pl-2 prose-li:marker:text-primary lg:prose-ul:mx-0"
             />
           )
         }
