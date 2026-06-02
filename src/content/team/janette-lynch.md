@@ -1,6 +1,6 @@
 ---
 draft: false
-name: Alicia McBeth
+name: Alicia MacBeth
 biography: Alicia has volunteered with Clarion PAWS since 2019. She has
   experience with fostering kittens and special-needs cats, shelter management,
   and TNR. Alicia is eager to serve the Clarion animal community further by

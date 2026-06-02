@@ -70,13 +70,13 @@ sections:
 
           - Wet and dry cat food
 
+          - Puppy pads
+
           - Paper towels
 
           - Disposable gloves
 
-          - Puppy pads
-
-          - Small paper plates
+          - Small paper plates and bowls 
 
           - Towels or small blankets (gently used is okay)
 
@@ -90,7 +90,7 @@ sections:
 
 
           If you’re unsure whether an item is helpful, feel free to contact us
-          before donating. Contact us to donate! 
+          before donating. 
         tone: sand
       - eyebrow: Volunteer
         title: Volunteer with Us
